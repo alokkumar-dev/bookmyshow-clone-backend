@@ -6,6 +6,7 @@ const newToken = (user) => {
   return jwt.sign({ user }, process.env.JWT_SECRET_KEY);
 };
 const register = async (req, res) => {
+  console.log(req)
   try {
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
