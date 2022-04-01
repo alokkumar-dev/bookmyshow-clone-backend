@@ -1,4 +1,4 @@
 
 module.exports= ()=>{
-    return mongoose.connect("mongodb+srv://bookmyshow:bookmyshow@cluster0.boe9u.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
+    return mongoose.connect("mongodb+srv://bmnaveen:bmnaveen@cluster0.ayxfh.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
 }
