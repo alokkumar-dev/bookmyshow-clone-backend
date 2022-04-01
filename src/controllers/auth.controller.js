@@ -22,7 +22,7 @@ const register = async (req, res) => {
     }
 
     user = await User.create(req.body);
-    res.send({ user, token });
+    res.send( user );
   } catch (err) {
     res.status(500).send(err.message);
   }
