@@ -20,6 +20,7 @@ app.use(cors());
 
 app.use("/users", userController);
 app.use("/bag", bagController);
+app.use("/bag", bagController);
 app.use("/movies", movieController);
 app.use("/movies", movieController);
 app.use("/premiere", premiereController);

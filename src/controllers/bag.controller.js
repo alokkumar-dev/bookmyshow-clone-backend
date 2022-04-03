@@ -47,7 +47,7 @@ router.post("", async (req, res) => {
 //   }
 // });
 
-router.get("", authenticate, async (req, res) => {
+router.get("/:id", async (req, res) => {
   try {
     console.log(req.params.id);
 
