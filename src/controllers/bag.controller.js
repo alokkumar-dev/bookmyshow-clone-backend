@@ -19,7 +19,7 @@ router.post("", async (req, res) => {
     const bag = await Bag.create(
       {
         userid: req.body.userid,
-        title: movie.req.body.title,
+        title: req.body.title,
         img:req.body.img,
         amount:req.body.amount
       }
