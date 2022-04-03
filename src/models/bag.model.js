@@ -1,13 +1,10 @@
 const mongoose = require("mongoose");
 
 const bagSchema = new mongoose.Schema({
-  img: { type: String, required: false },
-  name: { type: String, required: false },
-  price: { type: String, required: false },
-  discount: { type: String, required: false },
-  nos:{ type: Number, required: false },
-  time: { type: String, required: false },
-  user_id: { type: String, required: false },
+  userid: {type:String,required:true},
+  title: {type:String,required:true},
+  img:{type:String,required:true},
+  amount:{type:String,required:true}
 });
 
 const Bag = mongoose.model("bag", bagSchema); // user => users
