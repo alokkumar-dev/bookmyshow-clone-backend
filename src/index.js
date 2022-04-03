@@ -17,7 +17,7 @@ app.use(cors());
 
 app.use("/users", userController);
 app.use("/bag", bagController);
-app.use("/movie", movieController);
+app.use("/movies", movieController);
 
 
 
