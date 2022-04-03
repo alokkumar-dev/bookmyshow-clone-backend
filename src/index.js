@@ -6,6 +6,8 @@ const userController = require("./controllers/user.controller");
 const bagController = require("./controllers/bag.controller");
 const movieController = require("./controllers/movies.controller");
 const entertainmentController = require("./controllers/entertainment.controller");
+const premiereController = require("./controllers/premiere.controller");
+const laughterController = require("./controllers/laughter.controller");
 const { register, login } = require("./controllers/auth.controller");
 const { body } = require("express-validator");
 
@@ -19,8 +21,9 @@ app.use(cors());
 app.use("/users", userController);
 app.use("/bag", bagController);
 app.use("/movies", movieController);
-app.use("/entertainments", entertainmentController);
-
+app.use("/premiere", premiereController);
+app.use("/laughter", laughterController);
+app.use("/entertainment", entertainmentController)
 
 
 app.post("/register", body("email").notEmpty(), register);
