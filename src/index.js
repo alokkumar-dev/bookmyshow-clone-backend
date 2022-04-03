@@ -22,6 +22,7 @@ app.use("/users", userController);
 app.use("/bag", bagController);
 app.use("/movies", movieController);
 app.use("/premiere", premiereController);
+app.use("/laughter", laughterController);
 app.use("/entertainment", entertainmentController)
 
 
