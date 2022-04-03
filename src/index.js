@@ -4,16 +4,11 @@ const connect = require("./configs/db");
 const cors = require("cors");
 const userController = require("./controllers/user.controller");
 const bagController = require("./controllers/bag.controller");
+const movieController = require("./controllers/movies.controller");
 const { register, login } = require("./controllers/auth.controller");
 const { body } = require("express-validator");
 
-// //----------------product page controllers-----------------//
-// const womenController = require("./controllers/womenController");
-// const womenshoeController = require("./controllers/womenshoeController");
-// const menController = require("./controllers/menController");
-// const homeController = require("./controllers/homeController");
-// const lifestyleController = require("./controllers/lifestyleController");
-// //-------------------//------------------------------//----------//
+
 
 const app = express();
 
@@ -22,6 +17,7 @@ app.use(cors());
 
 app.use("/users", userController);
 app.use("/bag", bagController);
+app.use("/movie", movieController);
 
 
 
