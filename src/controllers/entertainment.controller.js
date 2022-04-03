@@ -4,8 +4,6 @@ const Entertainments = require("../models/entertainment.model");
 const router = express.Router();
 router.get("", async (req, res) => {
     try {
-     
-  
       const entertainments = await Entertainments.find()
         .lean()
         .exec();
