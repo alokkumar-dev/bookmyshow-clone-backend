@@ -1,10 +1,10 @@
 const mongoose = require("mongoose");
 
 const bagSchema = new mongoose.Schema({
-  userid: {required:true},
-  title: {required:true},
-  img:{required:true},
-  amount:{required:true}
+  userid: {type:String,required:true},
+  title: {type:String,required:true},
+  img:{type:String,required:true},
+  amount:{type:String,required:true}
 });
 
 const Bag = mongoose.model("bag", bagSchema); // user => users
