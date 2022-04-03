@@ -18,15 +18,10 @@ router.post("", async (req, res) => {
     // const user_id = req.user._id;
     const bag = await Bag.create(
       {
-        user_id: req.body.user_id,
-        img1: req.body.img1,
-        img2: req.body.img2,
-        name: req.body.name,
-        price: req.body.price,
-        discount: req.body.discount,
-        size: req.body.size,
-        color: req.body.color,
-        brand: req.body.brand,
+        userid: {type:String,required:true},
+        title: {type:String,required:true},
+        img:{type:String,required:true},
+        amount:{type:String,required:true}
       }
       // {
       //   new: true,
