@@ -4,6 +4,6 @@ const entertainmentsSchema = new mongoose.Schema({
     Url:{type:String,required:true}, 
 });
 
-const Entertainments = mongoose.model("entertainment", entertainmentsSchema); // user => users
+const Entertainments = mongoose.model("entertainments", entertainmentsSchema); // user => users
 
 module.exports = Entertainments;
