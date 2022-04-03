@@ -8,14 +8,15 @@ const authorise = require("../middlewares/authorise");
 const router = express.Router();
 
 router.post("", async (req, res) => {
+  console.log(req.body);
+    
   try {
     // console.log(req.user, req.user._id);
     // console.log(req.headers);
     //  const product = await Product.findByIdAndUpdate(req.params.id, req.body, {
     //    new: true,
     //  });
-    console.log(req.body);
-    // const user_id = req.user._id;
+    
     const bag = await Bag.create(
       {
         userid: req.body.userid,
