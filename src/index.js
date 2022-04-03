@@ -5,6 +5,7 @@ const cors = require("cors");
 const userController = require("./controllers/user.controller");
 const bagController = require("./controllers/bag.controller");
 const movieController = require("./controllers/movies.controller");
+const entertainmentController = require("./controllers/entertainment.controller");
 const { register, login } = require("./controllers/auth.controller");
 const { body } = require("express-validator");
 
@@ -18,6 +19,7 @@ app.use(cors());
 app.use("/users", userController);
 app.use("/bag", bagController);
 app.use("/movies", movieController);
+app.use("/entertainment", entertainmentController);
 
 
 
