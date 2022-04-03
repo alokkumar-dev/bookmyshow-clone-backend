@@ -14,7 +14,7 @@ router.get("", async (req, res) => {
       return res.status(500).send({ message: err.message });
     }
   });
-  router.get("/:id", async (req, res) => {
+  router.get("/:_id", async (req, res) => {
     try {
      
       
