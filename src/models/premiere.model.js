@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 const premiereSchema = new mongoose.Schema({
-    Url:{type:String,required:true},
+    url:{type:String,required:true},
     title: {type:String,required:true}
 });
 
