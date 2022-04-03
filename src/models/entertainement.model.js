@@ -1,9 +1,9 @@
 const mongoose = require("mongoose");
 
-const entertainmentSchema = new mongoose.Schema({
+const entertainmentsSchema = new mongoose.Schema({
     Url:{type:String,required:true}, 
 });
 
-const Entertainment = mongoose.model("entertainment", entertainmentSchema); // user => users
+const Entertainments = mongoose.model("entertainment", entertainmentsSchema); // user => users
 
-module.exports = Entertainment;
+module.exports = Entertainments;

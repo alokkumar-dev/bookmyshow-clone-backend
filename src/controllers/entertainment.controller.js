@@ -1,15 +1,15 @@
 const express = require("express");
 
-const Entertainment = require("../models/entertainment.model");
+const Entertainments = require("../models/entertainment.model");
 const router = express.Router();
 router.get("", async (req, res) => {
     try {
      
   
-      const entertainment = await Entertainment.find()
+      const entertainments = await Entertainments.find()
         .lean()
         .exec();
-      return res.send(entertainment);
+      return res.send(entertainments);
     } catch (err) {
       return res.status(500).send({ message: err.message });
     }

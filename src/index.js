@@ -21,9 +21,14 @@ app.use(cors());
 app.use("/users", userController);
 app.use("/bag", bagController);
 app.use("/movies", movieController);
+<<<<<<< HEAD
 app.use("/entertainment", entertainmentController);
 app.use("/premiere", premiereController);
 app.use("/laughter", laughterController);
+=======
+app.use("/entertainments", entertainmentController);
+
+>>>>>>> 2cca38c689c66493763c7242c70c06f25d487cf1
 
 
 app.post("/register", body("email").notEmpty(), register);
